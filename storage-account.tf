@@ -30,7 +30,7 @@ resource "azurerm_storage_account_network_rules" "storagerules" {
   default_action = "Deny"
   virtual_network_subnet_ids = [azurerm_subnet.subnet_resource.id]
   bypass = ["AzureServices"]
-  ip_rules = [ "100.0.0.1",var.localip]                                               #Passing local IP as environment variable bandaid fix 
+  ip_rules = [ "100.0.0.1",var.localip]                                               #bandaid fix
 
   depends_on = [ azurerm_storage_container.storecontainer ]
 }
