@@ -93,3 +93,18 @@ variable "private_service_connection_name" {
   description = "Name of Private Service Connection"
   type = string
 }
+
+variable "localip" {
+  description = "Local IP Address"
+  type = string
+}
+
+variable "container_name" {
+  description = "Name of Containter within Storage Account"
+  type = string
+}
+
+variable "pdns_zone_group_name" {
+  description = "Name of Private DNS Zone Group"
+  type = string
+}
